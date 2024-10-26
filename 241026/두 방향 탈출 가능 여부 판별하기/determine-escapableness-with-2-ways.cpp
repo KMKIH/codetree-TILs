@@ -1,21 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-
 #include <iostream>
-#include <cstdio>
-
-#include <algorithm>
-#include <stdlib.h>
-#include <cstring>
-#include <cmath>
-
 #include <vector>
 #include <stack>
-#include <queue>
-#include <set>
-#include <map>
-#include <unordered_set>
-#include <unordered_map>
 using namespace std;
 
 int n, m; // x축 y축
@@ -27,7 +14,7 @@ int dy[2] = { 1,0 };
 void input() {
 	scanf("%d %d", &n, &m);
 	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
+		for (int j = 0; j < m; j++) {
 			scanf("%d", &graph[i][j]);
 		}
 	}
@@ -57,7 +44,7 @@ void dfs(int sx, int sy) {
 }
 void solution() {
 	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
+		for (int j = 0; j < m; j++) {
 			visited[i][j] = false;
 		}
 	}
