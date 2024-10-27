@@ -4,6 +4,6 @@ using namespace std;
 int main() {
     int a = 3;
     char b = 'C';
-    printf("%d %c",a,b);
+    printf("%d\n%c",a,b);
     return 0;
 }
